@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 
+$bg:#114;
+$height:10em;
+$linkedin:#007fff;
+$dev:#00a099;
+$codepen:#ff0a4c;
+
 * {
   box-sizing: border-box;
 }
@@ -380,3 +386,113 @@ body1 {
     transition: 0.3s;
   }
   
+  .cardnew{
+		position:relative;
+		.image{
+      height: 294px;
+			// height:$height;
+			width:($height*2.5);
+			transition:0.5s;	
+			position:relative;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		.image.image-1{
+			background:$bg;
+			transform:translateY($height*1.3);	
+			z-index:1;
+			i{
+				transition:.5s;
+				opacity:.2;
+				color:white;
+			}
+		}	
+		&:hover {
+			.image.image-1{
+				&.codepen{
+					background:$codepen;
+				}
+				&.deviantart{
+					background:$dev;
+				}
+				&.linkedin{
+					background:$linkedin;
+				}
+				i{
+					opacity:1;
+				}
+				.content {
+					opacity: 0.2;
+					transition: 0.5s;
+					img {
+						max-width: 100px;
+					}
+					h3 {
+						margin: 10px 0 0;
+						padding: 0;
+						color: #fff;
+						text-align: center;
+						font-size: 1.5em;
+					}
+				}
+			}
+			.image.image-1,
+			.image.image-2 {
+				transform: translateY(0);
+			}
+		}
+		.image.image-2{
+			background:white;
+			transform:translateY(-($height/2));
+			padding:.5em;
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+			box-sizing: border-box;
+			.content{
+				width:90%;
+				overflow:hidden;
+				text-align:center;
+				box-sizing:border-box;
+				&.codepen{
+					p{
+						color:$codepen;
+					}
+					a{
+						background:$codepen;
+					}
+				}
+				&.deviantart{
+					p{
+						color:$dev;
+					}
+					a{
+						background:$dev;
+					}
+				}
+				&.linkedin{
+					p{
+						color:$linkedin;
+					}
+					a{
+						background:$linkedin;
+					}
+				}
+				p{
+					margin:0;
+					padding:0;
+					padding:.5em;
+					font-size:1em;
+				}
+				a{
+					display:inline-block;
+					color:white;
+					margin:.2em 0 0;
+					text-transform:uppercase;
+					text-decoration:none;
+					width:90%;
+					padding:.2em;
+					font-size:1em;
+				}
+			}
+		}
+	}
