@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Finlandica:wght@500&family=GFS+Neohellenic:wght@700&family=Montserrat:wght@500&family=Overpass:wght@900&family=Poppins:wght@200;500&family=Secular+One&family=Titillium+Web:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600');
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import "/buttons.scss";
+
+@import "/animte.js";
+
+@font-face {
+    font-family: 'LineClear';
+    src: url(/assets/fonts/LuloCleanOutlineBold-webfont.woff);
+}

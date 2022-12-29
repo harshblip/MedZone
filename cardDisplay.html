@@ -1,0 +1,228 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="buttons.scss">
+  <link rel="stylesheet" href="animte.js">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+  <script src="./node_modules/daisyui/dist/styled.css"></script>
+  <!-- <link rel="stylesheet" href=""> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chela+One&family=Finlandica:wght@500&family=GFS+Neohellenic:wght@700&family=Montserrat:wght@500&family=Overpass:wght@900&family=Poppins:wght@200;500&family=Secular+One&family=Titillium+Web:wght@300&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <title> tailwind css </title>
+</head>
+
+<body>
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-medical-cross" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#4361A7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M13 3a1 1 0 0 1 1 1v4.535l3.928 -2.267a1 1 0 0 1 1.366 .366l1 1.732a1 1 0 0 1 -.366 1.366l-3.927 2.268l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1 -1.366 .366l-3.928 -2.269v4.536a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-4.536l-3.928 2.268a1 1 0 0 1 -1.366 -.366l-1 -1.732a1 1 0 0 1 .366 -1.366l3.927 -2.268l-3.927 -2.268a1 1 0 0 1 -.366 -1.366l1 -1.732a1 1 0 0 1 1.366 -.366l3.928 2.267v-4.535a1 1 0 0 1 1 -1h2z" />
+  </svg>
+    <nav class = "font-secularone">
+      <p class=" text-4xl ml-3 font-semibold cursor-pointer text-blue-600"> MedZone </p>
+    </nav> -->
+
+
+  <div class=" backkground w-full bg-greey max-h-screen relative">
+    <div class="mt-5 py-4 w-full bgnav rounded-full fixed">
+      <div class="relative">
+        <div class="px-10 flex flex-row cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-medical-cross" width="60" height="60"
+            viewBox="0 2 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M13 3a1 1 0 0 1 1 1v4.535l3.928 -2.267a1 1 0 0 1 1.366 .366l1 1.732a1 1 0 0 1 -.366 1.366l-3.927 2.268l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1 -1.366 .366l-3.928 -2.269v4.536a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-4.536l-3.928 2.268a1 1 0 0 1 -1.366 -.366l-1 -1.732a1 1 0 0 1 .366 -1.366l3.927 -2.268l-3.927 -2.268a1 1 0 0 1 -.366 -1.366l1 -1.732a1 1 0 0 1 1.366 -.366l3.928 2.267v-4.535a1 1 0 0 1 1 -1h2z" />
+          </svg>
+          <div class="flex divide-x-2 divide-gray-600">
+            <div>
+              <nav class="font-secularone">
+                <p class=" text-4xl ml-3 mr-8 mt-2 font-semibold cursor-pointer text-black"> MedZone </p>
+              </nav>
+            </div>
+            <div class="px-10 mt-2 text-4xl font-popi">
+              Your Doctors
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="fixed py-28">
+        <div class="flex flex-col px-6 ">
+          <div class="ml-10 mt-10 py-20 px-2 bg-white rounded-lg shadow-lg">
+              <p class="font-semibold ml-10 font-web text-xl mb-2"> Write your symptoms </p>
+              <!-- <div class = "flex flex-row space-x-5"> -->
+            <input type="text" placeholder="cough cold ?" class="input w-1/2 ml-10 font-popi" />
+            <button class = "py-3 px-6 ml-4 font-popi font-semibold rounded-lg bg-slate-500 text-white"> Add </button>
+            <!-- </div> -->
+            <p class="font-semibold ml-10 font-web text-xl mt-10 mb-2"> Your Location </p>
+            <input type="text" placeholder="Hawkins, Indiana" class="input w-full ml-10 max-w-xs font-popi" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "relative py-32 mr-5 flex justify-end items-end">
+      <div class="mr-24">
+        <div class="fixed dropdown dropdown-left px-1">
+          <label tabindex="0" class="btndropdown px-16 -ml-28 font-popi font-semibold m-1"> Sort </label>
+          <ul tabindex="0" class="dropdown-content menu shadow bg-base-100 rounded-box px-10">
+            <li><a class="sort1 font-popi"> Relief </a></li>
+            <li><a class="sort1 font-popi"> Distance </a></li>
+            <li><a class="sort1 font-popi"> Symptoms Matched </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class = "flex justify-center items-center px-32">
+      <div class = "ml-48 grid grid-cols-2 gap-24">
+        <div class = "cardnew -mt-56">
+          <div class="rounded-lg shadow-xl flex justify-start flex-col card-background image image-1 codepen relative">
+            <div class = "inline-flex text-2xl font-semibold mt-4 ml-4">
+              <p class = "font-montes"> Niraj Jain  </p>
+              <div class = "text-sm mt-3 ml-1">
+                (He/Her)
+              </div>
+              <div class="radial-progress ml-28 justify-end" style="--value:65; font-size: medium;">65%</div>
+            </div>
+            <div class = "font-popi-200 -mt-6 ml-4">
+              <p> Age: &nbsp; 18 </p>
+            </div>
+            <div class = "font-web font-semibold text-xl mt-4 ml-4">
+              <p> Fever, cough, cold, breathlessness, red eye, weakness </p>
+            </div>
+            <div class = "map-responsive font-popi mt-4 ml-4">
+              <div class = "inline-flex space-x-5">
+              <img src="./images/map.png" alt="" height="30" width="30" class = "">
+              <a href=" https://goo.gl/maps/UvwzYjnb2v81gBUN8" class = "location-button"> Location </a>
+            </div>
+            <div>
+              <div class = "inline-flex mt-5">
+                <p class = "font-web font-semibold"> 273km </p>
+              <p class = "font-web ml-4"> away </p>
+              <p class = "font-web ml-28"> ~ Manant Tyagi (24 M) </p>
+              </div>
+              
+            </div>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117312.65483235936!2d77.4176768!3d23.242342400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43a3169e2dff%3A0xc9ed66152247f1c!2sAura%20Mall!5e0!3m2!1sen!2sin!4v1672038482627!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+              
+          </div>
+          <div class="image image-2">
+            <div class="content codepen">
+                <p class = "font-popi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+              <!-- <a href="https://codepen.io/ALMcinnis" target="_blank">Link</a> -->
+            </div>
+          </div>
+        </div>
+        <div class = "cardnew -mt-56">
+          <div class="rounded-lg shadow-xl flex justify-start flex-col card1-background image image-1 codepen relative">
+            <div class = "inline-flex text-3xl font-web font-semibold mt-4 ml-4">
+              <p> Niraj Jain  </p>
+              <div class = "text-sm mt-1 ml-1">
+                (He/Her)
+              </div>
+              <div class="radial-progress ml-28 justify-end" style="--value:80; font-size: medium;">80%</div>
+            </div>
+            <div class = "font-popi -mt-4 ml-4">
+              <p> Age: &nbsp; 18 </p>
+            </div>
+            <div class = "font-popi mt-4 ml-4">
+              <p> Fever, cough, cold, breathlessness, red eye, weakness </p>
+            </div>
+            <div class = "map-responsive font-popi mt-4 ml-4">
+              <div class = "inline-flex space-x-5">
+              <img src="./images/map.png" alt="" height="30" width="30" class = "">
+              <a href=" https://goo.gl/maps/UvwzYjnb2v81gBUN8" class = "location-button"> Location </a>
+            </div>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117312.65483235936!2d77.4176768!3d23.242342400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43a3169e2dff%3A0xc9ed66152247f1c!2sAura%20Mall!5e0!3m2!1sen!2sin!4v1672038482627!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+              
+          </div>
+          <div class="image image-2">
+            <div class="content codepen">
+                <p class = "font-popi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+              <!-- <a href="https://codepen.io/ALMcinnis" target="_blank">Link</a> -->
+            </div>
+          </div>
+        </div>
+        <div class = "cardnew -mt-56">
+          <div class="rounded-lg shadow-xl flex justify-start flex-col card1-background image image-1 codepen relative">
+            <div class = "inline-flex text-3xl font-web font-semibold mt-4 ml-4">
+              <p> Niraj Jain  </p>
+              <div class = "text-sm mt-1 ml-1">
+                (He/Her)
+              </div>
+              <div class="radial-progress ml-28 justify-end" style="--value:80; font-size: medium;">80%</div>
+            </div>
+            <div class = "font-popi -mt-4 ml-4">
+              <p> Age: &nbsp; 18 </p>
+            </div>
+            <div class = "font-popi mt-4 ml-4">
+              <p> Fever, cough, cold, breathlessness, red eye, weakness </p>
+            </div>
+            <div class = "map-responsive font-popi mt-4 ml-4">
+              <div class = "inline-flex space-x-5">
+              <img src="./images/map.png" alt="" height="30" width="30" class = "">
+              <a href=" https://goo.gl/maps/UvwzYjnb2v81gBUN8" class = "location-button"> Location </a>
+            </div>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117312.65483235936!2d77.4176768!3d23.242342400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43a3169e2dff%3A0xc9ed66152247f1c!2sAura%20Mall!5e0!3m2!1sen!2sin!4v1672038482627!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+              
+          </div>
+          <div class="image image-2">
+            <div class="content codepen">
+                <p class = "font-popi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+              <!-- <a href="https://codepen.io/ALMcinnis" target="_blank">Link</a> -->
+            </div>
+          </div>
+        </div>
+        <div class = "cardnew -mt-56">
+          <div class="rounded-lg shadow-xl flex justify-start flex-col card1-background image image-1 codepen relative">
+            <div class = "inline-flex text-3xl font-web font-semibold mt-4 ml-4">
+              <p> Niraj Jain  </p>
+              <div class = "text-sm mt-1 ml-1">
+                (He/Her)
+              </div>
+              <div class="radial-progress ml-28 justify-end" style="--value:80; font-size: medium;">80%</div>
+            </div>
+            <div class = "font-popi -mt-4 ml-4">
+              <p> Age: &nbsp; 18 </p>
+            </div>
+            <div class = "font-popi mt-4 ml-4">
+              <p> Fever, cough, cold, breathlessness, red eye, weakness </p>
+            </div>
+            <div class = "map-responsive font-popi mt-4 ml-4">
+              <div class = "inline-flex space-x-5">
+              <img src="./images/map.png" alt="" height="30" width="30" class = "">
+              <a href=" https://goo.gl/maps/UvwzYjnb2v81gBUN8" class = "location-button"> Location </a>
+            </div>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117312.65483235936!2d77.4176768!3d23.242342400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43a3169e2dff%3A0xc9ed66152247f1c!2sAura%20Mall!5e0!3m2!1sen!2sin!4v1672038482627!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+              
+          </div>
+          <div class="image image-2">
+            <div class="content codepen">
+                <p class = "font-popi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+              <!-- <a href="https://codepen.io/ALMcinnis" target="_blank">Link</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+</body>
+
+</html>
