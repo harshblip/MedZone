@@ -1,0 +1,192 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #5477d5;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  color: #fff;
+}
+
+.desaturate {
+  filter: grayscale(90%);
+}
+
+.logo {
+  display: block;
+  box-shadow: 2px 5px 20px -5px rgba(0,0,0,0.2);
+  margin: 0 auto 100px auto;
+}
+
+
+/*====== Mobile First ========*/
+body > section {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+.center--text {
+  text-align: center;
+}
+
+
+.form--login {
+  margin: 40px 0;  
+}
+
+
+.form--login__step input {
+  height: 55px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  margin-bottom: 15px;
+  border: 0;
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 1em;
+  box-shadow: 1px 4px 66px rgba(0,0,0,0.3);
+}
+
+.form__buttons {
+  display: flex;
+  margin-top: 30px;
+}
+
+.form__button {
+  padding: 15px 20px;
+  border: 0;
+  font-size: 0.9em;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+  color: #5477d5;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.form__button:hover {
+  box-shadow: 1px 4px 66px rgba(0,0,0,0.3);
+}
+
+.form__button--bigger {
+  background-color: rgba(255,255,255,0.5);
+  padding: 15px 30px;
+  margin-left: auto;
+}
+
+
+/*=====css click hack======*/
+
+.click-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+.click-toggle--label {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  width: 100%;
+  padding: 15px 0; /*increases click area*/
+}
+
+.click-toggle--label:hover {
+ cursor: pointer; 
+}
+
+.click-toggle__content {
+  height: 0;
+  overflow: hidden;
+  will-change: height;
+  transition: 0.3s height;
+}
+
+#airtime:checked ~ #airtime__content,
+#transfer:checked ~ #transfer__content,
+#dstv:checked ~ #dstv__content,
+#gotv:checked ~ #gotv__content,
+#phcn:checked ~ #phcn__content {
+  height: 150px; /*set height for transition to work*/
+}
+
+
+/* transaction inputs */
+.transaction-form {
+  margin: 30px 0;
+}
+
+.transaction-form__section {
+  margin-bottom: 30px;  
+}
+
+.transaction-input {
+  display: block;
+  border: 0;
+  height: 20px;
+  padding: 5px 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  background: #5477d5;
+  will-change: height;
+  transition: 0.3s height;
+}
+
+
+#airtime__amount:focus,
+#airtime__recipient:focus{
+  height: 35px;
+  background: rgba(255,255,255,0.1);
+  border: 0;
+  font-size: 1em;
+}
+
+.transaction-input--label {
+  display: block;
+  font-size: 0.7em;
+  width: 100%;
+  padding: 3px 0;
+  transition: 0.3s all;
+}
+
+#airtime__amount:focus + #airtime__amount--label,
+#airtime__recipient:focus + #airtime__recipient--label{
+  transform: translateY(-60px);
+  color: #fff;
+}
+
+
+/*====== Bigger Screens ======*/
+@media only screen and (min-width: 768px) {
+ 
+  /*Position every SECTION (that is a direct child of the body element) at the center*/
+  body > section {
+    margin: calc(50vh - 300px) auto;
+    width: 400px;
+    height: 600px;
+    background: inherit;
+    box-shadow: 2px 5px 30px -18px rgba(0,0,0,0.5);
+   } 
+}
