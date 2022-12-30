@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="buttons.scss">
+  <link rel="stylesheet" href="animte.js">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="./node_modules/flowbite/dist/flowbite.js"></script>  
+  <script src="./node_modules/daisyui/dist/styled.css"></script>
+  <!-- <link rel="stylesheet" href=""> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Finlandica:wght@500&family=GFS+Neohellenic:wght@700&family=Montserrat:wght@500&family=Overpass:wght@900&family=Poppins:wght@200;500&family=Secular+One&display=swap" rel="stylesheet"> 
+  <link href="https://www.1001fonts.com/antipasto-font.html?text=MedZone" rel="stylesheet"> 
+  <title> tailwind css </title>
+</head>
+<body class = "cl h-screen">
+  <div class = "w-full -ml-32 absolute flex justify-end">
+    <img src="./images/Rhinoplasty-bro.png" alt="" height = "870" width = "850">
+  </div>
+
+  <h1 class = "font-popi font-semibold text-4xl flex justify-start px-80 -mt-8"> Post Your Experience  </h1>
+
+<div id='form' class='_form'>
+  <form action='#' method='POST' name='addUser'>
+
+    <fieldset>
+      <legend class = "font-bold font-popi">Doctor's Name</legend>
+      <input type='text' name='name' value='' placeholder="Doctor's name" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Age</legend>
+      <input type='number' name='password' value='' placeholder="How old are you ?" />
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Add Symptoms</legend>
+      <textarea name='about-your' placeholder="What is it bothering you ?"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Patient's Name</legend>
+      <input type='text' name='name' value='' placeholder="Your name" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Relief • 10% </legend>
+      <!-- <label class='input-select'> -->
+        <input type="range" min="0" max="100" value="40" class="range range-warning" />
+      <!-- </label> -->
+
+    </fieldset>
+
+    <fieldset>
+      <legend>GENDER</legend>
+      <label class='input-check'>
+        					<input type='radio' name='gender' value='m'><span>Male</span>
+				      </label>
+      <label class='input-check'>
+					        <input type='radio' name='gender' value='f'><span>Female</span>
+      				</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Doctor's Address</legend>
+      <input type='text' name='password' value='' placeholder="Hawkins, Indiana" />
+    </fieldset>
+
+    <input type='submit' name='submit' value='Submit' />
+  </form>
+</div>
+</body>
+</html>
