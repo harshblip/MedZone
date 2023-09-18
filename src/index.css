@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Finlandica:wght@500&family=GFS+Neohellenic:wght@700&family=Kaushan+Script&family=Montserrat:wght@300;500&family=Overpass:wght@200;900&family=Pacifico&family=Poppins:wght@200;500&family=Secular+One&family=Titillium+Web:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600');
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
